@@ -75,7 +75,7 @@
 				
 				// Updates the width of the twin. (solution for textareas with widths in percent)
 				function setTwinWidth(){
-					var curatedWidth = Math.floor(parseInt($textarea.width(),10));
+					var curatedWidth = Math.floor(parseInt($textarea.outerWidth(),10));
 					if($twin.width() !== curatedWidth){
 						$twin.css({'width': curatedWidth + 'px'});
 						
